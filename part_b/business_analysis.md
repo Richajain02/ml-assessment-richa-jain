@@ -6,7 +6,7 @@ Input features (examples)-
 2. Promotion- promotion_type
 3. Time features- month, is_festival, is_weekend
 4. Customer demographic
-5. Historical performance
+5. Historical performance  
 Type of ML Problem - Supervised Regression
 Reason for choosing supervised regression-
 1. The output is a continuous numeric category.
