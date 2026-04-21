@@ -79,5 +79,42 @@ Solutions:
 
 ** Goal: To ensure that the model learns promotion impact properly.
 
+# B3  
+## (a) Train-Test Split & Metrics  
+* Split Strategy -  
+ Time-based split -  
+ Train: First ~2.5 years  
+ Test: Last 6 months  
+
+* Random split is inappropriate here because -  
+1. Causes data leakage
+2. Future data influences training
+3. Unrealistic performance
+* Evaluation Metrics -  
+1. RMSE - Penalizes large errors  
+* Important for avoiding big forecasting mistakes  
+2. MAE - Average absolute error  
+* Easy to interpret (“off by X units”)  
+3. MAPE - % error  
+* Useful for business comparison
+
+## (b) Explaining Different Recommendations  
+Using feature importance & explainability tools  
+Approach -    
+1. Extract feature importance from model  
+2. Use SHAP values (advanced)  
+Example Explanation:  
+December: Loyalty Points Bonus  
+1. High festival activity  
+2. High customer spending  
+3. Loyalty rewards more effective  
+March: Flat Discount  
+1. Lower demand period  
+2. Price-sensitive customers  
+3. Discounts drive volume
+   
+Communication to Marketing: The model adapts to seasonal demand patterns and customer behavior, which vary across months.  
+
+
 
 
