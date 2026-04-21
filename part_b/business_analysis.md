@@ -41,7 +41,43 @@ Since transactions are typically at a lower level (daily or per transaction), th
 * footfall → SUM or average  
 * promotion_type → dominant or assigned promotion for that month  
 * is_festival → MAX (if any day in the month is a festival)  
-* is_weekend → proportion or count of weekends
+* is_weekend → proportion or count of weekends  
+
+## (b) EDA Strategy  
+Here are high-impact analyses:  
+1. Promotion vs Sales (Boxplot)  
+* Compare items_sold across promotion types  
+* Look for: Which promotion performs best  
+* Impact: Feature importance + baseline strategy  
+2. Time Trend (Line Chart)   
+* Monthly sales over time  
+* Look for: Seasonality (example - December spike)  
+* Impact: Add time features (month, lag variables)  
+3. Location-wise Performance  
+* Urban vs rural sales comparison  
+* Look for: Different response patterns  
+* Impact: Segment models or add interaction features  
+4. Correlation Heatmap  
+* Between numerical variables  
+* Look for: Strong predictors (example - footfall)  
+* Impact: Feature selection / scaling  
+5. Competition Impact  
+* Scatter: competition_density vs items_sold  
+* Look for: Negative relationship  
+* Impact: Confirms importance of external factors
+
+## (c) Handling Imbalance  
+Problem:  
+80% data = no promotion  
+Model may ignore promotion effect  
+
+Solutions:  
+1. Oversample promotion cases  
+2. Use stratified sampling  
+3. Add promotion flag feature  
+4. Use weighted models  
+
+** Goal: To ensure that the model learns promotion impact properly.
 
 
 
