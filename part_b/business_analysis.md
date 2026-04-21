@@ -90,13 +90,14 @@ Solutions:
 1. Causes data leakage
 2. Future data influences training
 3. Unrealistic performance
+
 * Evaluation Metrics -  
 1. RMSE - Penalizes large errors  
-* Important for avoiding big forecasting mistakes  
+>> Important for avoiding big forecasting mistakes  
 2. MAE - Average absolute error  
-* Easy to interpret (“off by X units”)  
+>> Easy to interpret (“off by X units”)  
 3. MAPE - % error  
-* Useful for business comparison
+>> Useful for business comparison
 
 ## (b) Explaining Different Recommendations  
 Using feature importance & explainability tools  
@@ -104,7 +105,7 @@ Approach -
 1. Extract feature importance from model  
 2. Use SHAP values (advanced)
 
-// Example Explanation:  
+* Example Explanation:  
 December: Loyalty Points Bonus  
 1. High festival activity  
 2. High customer spending  
