@@ -105,7 +105,7 @@ Approach -
 1. Extract feature importance from model  
 2. Use SHAP values (advanced)
 
-* Example Explanation:  
+* Example Explanation:
 December: Loyalty Points Bonus  
 1. High festival activity  
 2. High customer spending  
