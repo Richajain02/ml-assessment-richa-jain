@@ -102,12 +102,14 @@ Solutions:
 Using feature importance & explainability tools  
 Approach -    
 1. Extract feature importance from model  
-2. Use SHAP values (advanced)  
-Example Explanation:  
+2. Use SHAP values (advanced)
+
+// Example Explanation:  
 December: Loyalty Points Bonus  
 1. High festival activity  
 2. High customer spending  
-3. Loyalty rewards more effective  
+3. Loyalty rewards more effective
+   
 March: Flat Discount  
 1. Lower demand period  
 2. Price-sensitive customers  
