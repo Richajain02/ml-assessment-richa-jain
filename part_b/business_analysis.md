@@ -105,7 +105,7 @@ Approach -
 1. Extract feature importance from model  
 2. Use SHAP values (advanced)
 
-* Example Explanation:
+* Example Explanation:  
 December: Loyalty Points Bonus  
 1. High festival activity  
 2. High customer spending  
@@ -117,6 +117,33 @@ March: Flat Discount
 3. Discounts drive volume
    
 Communication to Marketing: The model adapts to seasonal demand patterns and customer behavior, which vary across months.  
+
+## (c) Deployment Pipeline  
+Step 1: Save Model  
+import joblib  
+joblib.dump(pipeline, "model.pkl")  
+
+Step 2: Monthly Prediction Flow  
+Collect new month data  
+Apply same preprocessing pipeline  
+Load model:  
+model = joblib.load("model.pkl")  
+predictions = model.predict(new_data)  
+
+Step 3: Recommendation Logic  
+Try all 5 promotions per store  
+Choose promotion with highest predicted items_sold  
+
+Step 4: Monitoring   
+Track:  
+Prediction vs actual error (RMSE over time)  
+Data drift (feature distribution changes)  
+Promotion effectiveness decline  
+
+Retrain when -  
+Error increases significantly  
+Seasonality shifts  
+New store/customer behavior patterns  
 
 
 
