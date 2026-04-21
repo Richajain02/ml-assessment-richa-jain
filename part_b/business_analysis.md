@@ -9,7 +9,7 @@ Input features (examples)-
 5. Historical performance
 
 Type of ML Problem - Supervised Regression
->> Reason for choosing supervised regression-
+* Reason for choosing supervised regression-
 1. The output is a continuous numeric category.
 2. We are predicting the magnitude and not the category. So we are considering regression.
 
@@ -37,11 +37,11 @@ The four table (transactions, store attributes, promotion details, and a calenda
 Aggregations Performed:  
 Since transactions are typically at a lower level (daily or per transaction), the data will be aggregated to monthly store-level:  
 * items_sold → SUM  
-> revenue → SUM (if available)  
-> footfall → SUM or average  
-> promotion_type → dominant or assigned promotion for that month  
-> is_festival → MAX (if any day in the month is a festival)  
-is_weekend → proportion or count of weekends
+* revenue → SUM (if available)  
+* footfall → SUM or average  
+* promotion_type → dominant or assigned promotion for that month  
+* is_festival → MAX (if any day in the month is a festival)  
+* is_weekend → proportion or count of weekends
 
 
 
