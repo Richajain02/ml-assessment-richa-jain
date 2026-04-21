@@ -36,12 +36,11 @@ The four table (transactions, store attributes, promotion details, and a calenda
 
 Aggregations Performed:  
 Since transactions are typically at a lower level (daily or per transaction), the data will be aggregated to monthly store-level:  
-
-items_sold → SUM
-revenue → SUM (if available)
-footfall → SUM or average
-promotion_type → dominant or assigned promotion for that month
-is_festival → MAX (if any day in the month is a festival)
+> items_sold → SUM  
+> revenue → SUM (if available)  
+> footfall → SUM or average  
+> promotion_type → dominant or assigned promotion for that month  
+> is_festival → MAX (if any day in the month is a festival)  
 is_weekend → proportion or count of weekends
 
 
